@@ -1,0 +1,26 @@
+{
+    "name": "sellissimo/mollie",
+    "description": "Mollie for Sellissimo for Statamic 6.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3",
+        "sellissimo/core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sellissimo\\Mollie\\": "src/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Mollie for Sellissimo",
+            "slug": "sellissimo-mollie"
+        },
+        "laravel": {
+            "providers": [
+                "Sellissimo\\Mollie\\ServiceProvider"
+            ]
+        }
+    }
+}
